@@ -21,7 +21,7 @@ namespace Task3
         }
         static void Main(string[] args)
         {
-            //int n = Convert.ToInt32(Console.ReadLine()); // reading first line and converting to int
+             // reading first line and converting to int
             int n = int.Parse(Console.ReadLine());
             string[] numb = Console.ReadLine().Split(); // reading second line an array of string by split
             dublicate(numb, n); // Method thats dubplicate each of element
