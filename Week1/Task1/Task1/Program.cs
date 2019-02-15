@@ -12,7 +12,7 @@ namespace Task1
         {
             if (x < 2)
                 return false;
-            for (int j = 2; j <= Math.Sqrt(x); ++j) // Easy Algorithm O(sqrt(x))
+            for (int j = 2; j <= Math.Sqrt(x); ++j) // Chechking for prime , if (x%y==0) it  is not prime 
                 if (x % j == 0)
                     return false;
             return true;
