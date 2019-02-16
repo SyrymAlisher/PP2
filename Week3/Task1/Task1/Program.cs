@@ -138,26 +138,4 @@ namespace Example1
     }
 }
 
-/*static void Main(string[] args)
-            {
-                FSIMode f = FSIMode.DirectoryInfo;
-                f = FSIMode.File;
-                switch (f)
-                {
-                    case FSIMode.DirectoryInfo:
-                        Console.WriteLine("Dir");
-                        break;
-                    case FSIMode.File:
-                        Console.WriteLine("File");
-                        break;
-                    default:
-                        Console.WriteLine("Not Defined");
-                        break;
-                }
-                //if (f == FSIMode.File)
-                //    Console.WriteLine("File!");
-                //else
-                //    Console.WriteLine("dir");
-                //Console.ForegroundColor = ConsoleColor.
-            }
-            */
+

@@ -40,17 +40,17 @@ namespace task2
             return year + 1;
         }
         static void Main(string[] args)
-        {   // input the name
-            string s = Console.ReadLine();
+        {   
+            string s = Console.ReadLine(); // input the name
 
-            // input the id
-            string i = Console.ReadLine();
+           
+            string i = Console.ReadLine();   // input the id
 
-            // input the year of the study, then convert to the int
-            int y = int.Parse(Console.ReadLine());
+           
+            int y = int.Parse(Console.ReadLine());  // input the year of the study, then convert to the int
 
-            // use a function inc
-            y = inc(y);
+            
+            y = inc(y);   // use a function inc
             // create a new object in the class student, and add variables 
             Student A = new Student(s, i, y);
             // use method to the object A
@@ -67,6 +67,7 @@ namespace task2
             Student B = new Student(s1, i1, y1);
             // output the dates of student B
             B.print();
+            Console.ReadKey();
         }
     }
 }

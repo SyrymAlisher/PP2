@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.IO;
 namespace Task2
 {
-    class Kilogram
+    class Task2
     {
-        static bool isPrime(int x)
+        static bool isPrime(int x) //function to chech is number prime
         {
             if (x < 2)
                 return false;
@@ -24,9 +24,9 @@ namespace Task2
             {
                 foreach (string number in text)
                 {
-                    int x = Convert.ToInt32(number);
-                    if (isPrime(x))
-                        file.Write(number + " ");
+                    int x = Convert.ToInt32(number);//convert to int
+                    if (isPrime(x))//checking for prime
+                        file.Write(number + " ");//print prime numbers with space
                 }
             }
         }

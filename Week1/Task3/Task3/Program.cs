@@ -8,16 +8,16 @@ namespace Task3
 {
     class Program
     {
-        private static void dublicate(string[] s, int n) // Method dublicate with 2 parameters
+        public static void dublicate(string[] s, int n) // Method dublicate with 2 parameters
         {
-            string[] ss = new string[n * 2]; // String array
+            string[] doubled = new string[n * 2]; // String array
             for (int i = 0, j = 0; i < n; ++i)
             {
-                ss[j++] = s[i]; // Doubling
-                ss[j++] = s[i];
+                doubled[j++] = s[i]; // Doubling
+                doubled[j++] = s[i];
             }
             for (int i = 0; i < 2 * n; ++i)
-                Console.Write(ss[i] + " ");
+                Console.Write(doubled[i] + " ");
         }
         static void Main(string[] args)
         {

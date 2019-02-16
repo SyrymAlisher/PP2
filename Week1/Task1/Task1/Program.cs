@@ -32,7 +32,7 @@ namespace Task1
             Console.WriteLine(cnt);
             for (int i = 0; i < cnt; ++i)
             {
-                Console.Write(a[i].ToString() + " "); // Output answers in string form
+                Console.Write(a[i] + " "); // Output answer in string form
             }
             Console.ReadKey();
 

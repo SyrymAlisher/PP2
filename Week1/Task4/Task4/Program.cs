@@ -16,7 +16,7 @@ namespace Task4
                 for (int j = 0; j <= i; ++j)
                     d[i, j] = "[*]"; // Writing * to [i,j]
 
-            for (int i = 0; i < n; ++i, Console.WriteLine()) 
+            for (int i = 0; i < n; ++i, Console.WriteLine())
                 for (int j = 0; j <= i; ++j)
                     Console.Write(d[i, j]); // output the triangle
             Console.ReadKey();
