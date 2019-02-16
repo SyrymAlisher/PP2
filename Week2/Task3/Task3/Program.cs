@@ -8,9 +8,9 @@ namespace Task3
 {
     class Program
     {
-        static void rec(DirectoryInfo dir, string level)
+        static void rec(DirectoryInfo dir, string level) //rec
         {
-            Console.WriteLine(level + dir.Name);
+            Console.WriteLine(level + dir.Name); //write folder name and space
             level += "    ";
             FileSystemInfo[] fs = dir.GetFileSystemInfos();
             for (int i = 0; i < fs.Length; ++i)
@@ -27,8 +27,8 @@ namespace Task3
         }
         static void Main(string[] args)
         {
-            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\Сырым\Desktop\Spring 2019");
-            rec(dir, "");
+            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\Сырым\Desktop\Spring 2019"); //open folder
+            rec(dir, "");//recurcion 
             Console.ReadKey();
         }
     }
