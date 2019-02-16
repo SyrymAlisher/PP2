@@ -73,7 +73,7 @@ namespace Example1
             {
                 if (curMode == FSIMode.DirectoryInfo)
                     history.Peek().Draw();
-                ConsoleKeyInfo consolekeyInfo = Console.ReadKey(); // spravo4nik
+                ConsoleKeyInfo consolekeyInfo = Console.ReadKey(); 
                 switch (consolekeyInfo.Key)
                 {
                     case ConsoleKey.UpArrow:

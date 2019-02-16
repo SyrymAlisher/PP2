@@ -4,24 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+
 namespace Task4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Nurbergen\source\repos\Week2\Task4\Task4\Task4\text.txt";
-            string path1 = @"C:\Users\Сырым\Downloads\github\PP2\Week2\Task4";
-            DirectoryInfo dirInfo = new DirectoryInfo(path1);
-            FileInfo fi = new FileInfo(path);
-            if (fi.Exists && dirInfo.Exists)
-            {
-                fi.CopyTo(path1 + @"\Copy.txt", true);
-                fi.Delete();
-            }
-            else Console.WriteLine("path or path1 not found:(");
+            // the name of the file, that i will create
+            string file = "123.txt";
 
+            // the path of created file
+            string path1 = @"C:\Users\Сырым\Downloads\github\PP2\Week2\task4";
+
+            // the path of created and copied file
+            string path2 = @"C:\Users\Сырым\Downloads\github\PP2\Week2\task4\task4";
+
+            // with path.combine a file to the path1, it is like to the file give a place in pc
+            string file1 = Path.Combine(path1, file);
+
+            // file to the path2
+            string file2 = Path.Combine(path2, file);
+
+            // create a sourcefile that file in path1
+            FileStream fs = File.Create(file1);
+
+            // close the filestream, because of that the program doesn't work
+            fs.Close();
+
+            // then with class File use copy file, file1 copy to file2, then true is mean that confirm the operation
+            File.Copy(file1, file2, true);
+
+            // then delete the file1, file1 with operation delete
+            File.Delete(file1); 
         }
     }
 }
-
